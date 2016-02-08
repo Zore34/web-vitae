@@ -10,3 +10,5 @@ The default sections are (not necessarily in this order):
 - Personal projects
 
 Any working experience and personal project can be linked to any knowledge to indicate in which grade that experience have helped you to improve that knowledge.
+
+It doesn't use a database because it's only intended to be edited by the owner. Without concurrent writes, there's no need of transactions, so there's no database.
