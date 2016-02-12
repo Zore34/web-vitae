@@ -1,2 +1,21 @@
 {
+  "front_styles": {
+    "plain" : []
+  },
+  "front_js": {
+    "plain": []
+  },
+  "back_styles": {
+    "plain": []
+  },
+  "back_js": {
+    "plain": []
+  },
+  "active_sections": [],
+  "userdata": {
+    "username": "",
+    "real_name": "",
+    "pass_hash": "",
+    "email": ""
+  }
 }
