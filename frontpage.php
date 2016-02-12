@@ -5,8 +5,8 @@
     require_once "config_params.php";
     require_once "default_params.php"
     // This file shows the frontpage of the site. Depending of the params, shows one section or another.
-    // We define the styles
-    foreach(FrontViewers::getStyles(defaultParam('style')) as $style){
+    // We define the styles. ConfigParams::getStyles takes care of looking for a default param if there's no HTTP param.
+    foreach(FrontViewers::getStyles(ConfigParams::getStyles()) as $style){
     ?>
     <link rel="stylesheet" type="text/css" href="<?php print $style;?>">
     <?php
