@@ -10,11 +10,17 @@ require_once 'default_params.php'
 class ConfigParams {
   private static $CONFIG_FILE = "./data/config.json";
   
+  private static $json = null;
+  
   /**
    * Reads the config file and parses the JSON data.
    */
   private static function readConfigFile() {
-    return json_decode(file_get_contents($CONFIG_FILE));
+    // This will prevent loading the config file multiple times
+    if($json == null){
+      $json = json_decode(file_get_contents($CONFIG_FILE));
+    }
+    return $json;
   }
   
   /**
